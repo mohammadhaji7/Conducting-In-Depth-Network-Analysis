@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Kali Linux
+*.cap
+*.pcapng
+
+# Environment Variables
+.env
+
+# VirtualBox
+*.vbox~
+*.vdi.lck
