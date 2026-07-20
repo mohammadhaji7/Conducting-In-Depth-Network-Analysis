@@ -47,3 +47,26 @@ Successfully detected ICMP echo request and reply traffic using a custom Snort r
 
 **Lessons Learned**
 An IDS detects and reports suspicious or defined traffic patterns but does not block them. Alert analysis requires validating the source, destination, protocol, timestamp, and determining whether the activity is expected or suspicious.
+## Day X – Snort IDS Alert Logging
+
+### Objective
+Configure Snort IDS to detect ICMP traffic and log alerts for SIEM integration.
+
+### Tasks Completed
+- Enabled file logging using the alert_fast logger.
+- Validated Snort configuration successfully.
+- Started Snort in IDS mode on interface eth0.
+- Generated ICMP traffic using ping.
+- Verified custom ICMP detection rule execution.
+- Confirmed alerts were written to /home/kali/alert_fast.txt.
+
+### Evidence Collected
+- Snort configuration screenshot
+- Configuration validation screenshot
+- Snort IDS running
+- alert_fast.txt location
+- ICMP alert logs
+- Alert file verification
+
+### Outcome
+Snort is successfully generating alerts that are ready to be ingested into Splunk Enterprise through the Splunk Universal Forwarder.
