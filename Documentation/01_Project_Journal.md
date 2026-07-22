@@ -70,3 +70,32 @@ Configure Snort IDS to detect ICMP traffic and log alerts for SIEM integration.
 
 ### Outcome
 Snort is successfully generating alerts that are ready to be ingested into Splunk Enterprise through the Splunk Universal Forwarder.
+
+## Day X – WireGuard VPN Server and Client Configuration
+
+### Objectives
+- Configure a secure WireGuard VPN between a Kali Linux server and a Windows 11 client.
+- Verify encrypted communication over the VPN tunnel.
+
+### Activities Completed
+- Installed WireGuard and WireGuard tools on Kali Linux.
+- Installed the official WireGuard client on Windows 11.
+- Generated public/private key pairs for both server and client.
+- Configured the WireGuard server (`wg0`) with a dedicated VPN subnet (`10.10.10.0/24`).
+- Configured the Windows client and established a secure VPN tunnel.
+- Added the Windows client as a trusted peer on the Kali server.
+- Resolved an `AllowedIPs` configuration issue that initially prevented ICMP traffic.
+- Successfully verified bidirectional communication using ICMP over the VPN.
+
+### Results
+- Secure WireGuard tunnel established.
+- Successful handshake and encrypted data transfer observed.
+- Windows client successfully reached the Kali VPN endpoint.
+- Kali server successfully communicated with the Windows client over the VPN.
+
+### Evidence
+- WireGuard server configuration
+- Windows WireGuard client
+- Successful VPN handshake
+- Successful ping tests
+- VPN interface configuration
