@@ -8,15 +8,20 @@
 ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 
 > Enterprise Cybersecurity Lab demonstrating secure wireless communication, network monitoring, intrusion detection, VPN implementation, traffic analysis, and secure data transmission.
+---
+
+## 🏗️ Enterprise Lab Architecture
+
+The following diagram illustrates the enterprise-style lab environment implemented for secure wireless communication, encrypted data transmission, VPN connectivity, and network traffic analysis.
+
+<p align="center">
+  <img src="Architecture/network_lab_architecture.png" alt="Enterprise Network Analysis Lab" width="1000">
+</p>
+
+> **Figure 1:** Enterprise Network Analysis Lab architecture showing the interaction between the Windows host, Kali Linux virtual machine, encrypted TCP communication, WireGuard VPN, Snort IDS, Wireshark, and Fernet-based end-to-end encryption.
 
 ---
-## About the Author
 
-Cybersecurity-focused MCA graduate currently completing an On-the-Job Training (OJT) program at Spinnaker Analytics.
-
-This repository demonstrates hands-on implementation of network analysis, intrusion detection, secure communication, VPN technologies, and cybersecurity documentation using enterprise-inspired workflows.
-
----
 
 # Project Overview
 
@@ -28,18 +33,55 @@ The project combines offensive and defensive cybersecurity techniques including 
 
 ---
 
+# ✨ Key Features
+
+- Enterprise-style Network Architecture
+- Practical Wireless Security Assessment
+- Snort Intrusion Detection
+- WireGuard VPN Deployment
+- TLS Traffic Analysis
+- End-to-End Encryption using Fernet
+- Wireshark Packet Analysis
+- Technical Documentation
+- Practical Evidence Collection
+
+---
+
+## About the Author
+
+Cybersecurity-focused MCA graduate currently completing an On-the-Job Training (OJT) program at Spinnaker Analytics.
+
+This repository demonstrates hands-on implementation of network analysis, intrusion detection, secure communication, VPN technologies, and cybersecurity documentation using enterprise-inspired workflows.
+
+---
+
 ## Project Statistics
 
-| Metric | Value |
-|--------|-------|
+| Metric                 | Value         |
+| ---------------------- | ------------- |
+| Programming Language   | Python 3      |
+| Virtual Environment    | Kali Linux VM |
+| Operating System       | Windows 11    |
+| IDS                    | Snort         |
+| VPN                    | WireGuard     |
+| Encryption             | Fernet        |
+| Packet Analyzer        | Wireshark     |
+| Communication Protocol | TCP           |
+
+---
+
+## 📊 Project Summary
+
+| Category | Details |
+|----------|----------|
+| Project Type | Enterprise Network Security Lab |
+| Duration | OJT Portfolio Project |
+| Focus Area | Wireless Security & Network Analysis |
 | Programming Language | Python |
+| Security Tools | Wireshark, Snort, WireGuard |
+| Encryption | Fernet (Symmetric Encryption) |
 | Operating Systems | Windows 11, Kali Linux |
-| Practical Modules | 7 |
-| Packet Analysis | Wireshark |
-| IDS | Snort |
-| VPN | WireGuard |
-| Encryption | Fernet |
-| Documentation | In Progress |
+| Virtualization | Oracle VirtualBox |
 
 ---
 
@@ -87,32 +129,31 @@ The project combines offensive and defensive cybersecurity techniques including 
 
 ---
 
-# Enterprise Lab Architecture
+# 🖥️ Lab Environment
 
-```text
-                    Windows 11 Host
-                           │
-        ┌──────────────────┴──────────────────┐
-        │                                     │
-        ▼                                     ▼
-   Python Client                       Wireshark Analysis
-        │
-        │ TCP Port 5000
-        ▼
-══════════════════════════════════════════════════════════
-                  Virtual Network
-══════════════════════════════════════════════════════════
-        ▲
-        │
-        ▼
-                  Kali Linux VM
-        │
- ┌──────┼───────────────────────────────┐
- │      │               │               │
- ▼      ▼               ▼               ▼
-Snort  WireGuard     Python Server   Wireshark
- IDS      VPN      (Fernet Decryption)
-```
+| Component | Configuration |
+|-----------|---------------|
+| Host Machine | Windows 11 |
+| Virtual Machine | Kali Linux |
+| Hypervisor | Oracle VirtualBox |
+| Network | Internal / NAT |
+| Packet Analysis | Wireshark |
+| IDS | Snort |
+| VPN | WireGuard |
+| Programming | Python 3 |
+| Encryption | Fernet |
+
+---
+
+# 🏢 Enterprise Wireless Network Design
+
+The following architecture represents the secure enterprise wireless infrastructure that served as the reference design for this security assessment.
+
+<p align="center">
+<img src="Architecture/enterprise_wireless_network_architecture.png" width="1100">
+</p>
+
+> **Figure 2.** Enterprise wireless network architecture showing VLAN segmentation, VPN access, IDS/IPS monitoring, Bluetooth security, SIEM integration, and network security controls.
 
 ---
 
@@ -131,7 +172,6 @@ Snort  WireGuard     Python Server   Wireshark
 
 # Repository Structure
 
-```text
 Conducting-In-Depth-Network-Analysis
 │
 ├── Architecture
@@ -146,50 +186,73 @@ Conducting-In-Depth-Network-Analysis
 ├── Reports
 ├── Screenshots
 └── Testing
-```
 
----
+# 🛠️ Technologies Used
 
-# Technologies Used
-
-### Operating Systems
+## Operating Systems
 
 - Windows 11
 - Kali Linux
 
-### Programming
+---
+
+## Programming Language
 
 - Python 3
 
-### Security Tools
+---
 
-- Wireshark
-- Snort IDS
-- WireGuard VPN
-- Cryptography (Fernet)
-
-### Networking
+## Networking
 
 - TCP/IP
 - TLS
-- VPN
+- Virtual Networking
 - Packet Analysis
 
 ---
 
-# Modules Completed
+## Security Tools
 
-| Module | Status |
-|---------|:------:|
-| Environment Setup | ✅ |
-| Wireshark Traffic Analysis | ✅ |
-| TLS Packet Analysis | ✅ |
-| Snort IDS | ✅ |
-| WireGuard VPN | ✅ |
-| End-to-End Encryption | ✅ |
-| Network Validation | ✅ |
-| Documentation | 🚧 |
+- Wireshark
+- Snort IDS
+- WireGuard VPN
 
+---
+
+## Cryptography
+
+- Fernet (Symmetric Encryption)
+- Python Cryptography Library
+
+---
+
+## Virtualization
+
+- Oracle VirtualBox
+
+---
+
+## Python Libraries
+
+- socket
+- cryptography
+- datetime
+- threading
+- os
+
+# 📋 Modules Completed
+
+| Module | Practical Implementation | Evidence Collected |
+|---------|:-----------------------:|:------------------:|
+| Environment Setup | ✅ | ✅ |
+| Wireshark Traffic Analysis | ✅ | ✅ |
+| TLS Packet Analysis | ✅ | ✅ |
+| Snort IDS | ✅ | ✅ |
+| WireGuard VPN | ✅ | ✅ |
+| End-to-End Encryption | ✅ | ✅ |
+| Network Validation | ✅ | ✅ |
+| Documentation | 🚧 | 🚧 |
+| Final Report | ⏳ | ⏳ |
 ---
 
 # Practical Demonstrations
@@ -225,32 +288,48 @@ Features implemented:
 
 ---
 
-# Screenshots
+# 📸 Project Gallery
 
-The repository contains practical evidence including:
+## Wireshark & TLS Analysis
 
-- Wireshark packet captures
-- TLS handshake analysis
-- Snort configuration
-- WireGuard VPN deployment
-- End-to-End Encryption implementation
-- TCP Stream validation
+| Wireshark Capture | TLS Packet Details |
+|-------------------|--------------------|
+| ![](Screenshots/07_Wireless_Data_Transmission/01_wireshark_capture_started.png) | ![](Screenshots/07_Wireless_Data_Transmission/03_tls_packet_details.png) |
 
 ---
 
-# Skills Demonstrated
+## WireGuard VPN
 
-- Network Traffic Analysis
-- Packet Inspection
-- Intrusion Detection
-- Secure Communication
-- VPN Deployment
-- Python Socket Programming
-- Symmetric Encryption
-- Traffic Validation
-- Cybersecurity Documentation
-- Security Testing
+| Client Connected | Packet Capture |
+|------------------|----------------|
+| ![](Screenshots/10_WireGuard_VPN/07_windows_client_active.png) | ![](Screenshots/10_WireGuard_VPN/12_wireguard_udp_capture.png) |
 
+---
+
+## End-to-End Encryption
+
+| Server Waiting | Encrypted Payload |
+|----------------|-------------------|
+| ![](Screenshots/07_Wireless_Data_Transmission/09_server_waiting.png) | ![](Screenshots/07_Wireless_Data_Transmission/11_encrypted_payload.png) |
+
+| Decrypted Message | Follow TCP Stream |
+|-------------------|-------------------|
+| ![](Screenshots/07_Wireless_Data_Transmission/12_decrypted_message.png) | ![](Screenshots/07_Wireless_Data_Transmission/15_follow_tcp_stream.png) |
+
+---
+
+# 🎯 Skills Demonstrated
+
+| Domain | Skills |
+|---------|--------|
+| Network Security | Packet Analysis, Secure Communication |
+| Traffic Analysis | Wireshark, TCP Inspection |
+| Intrusion Detection | Snort IDS |
+| VPN Technologies | WireGuard |
+| Programming | Python Socket Programming |
+| Cryptography | Fernet Symmetric Encryption |
+| Documentation | Technical Writing |
+| Security Validation | Traffic Capture & Analysis |
 ---
 
 # Challenges & Solutions
@@ -264,29 +343,47 @@ The repository contains practical evidence including:
 
 ---
 
-# Future Improvements
+# 🚀 Future Improvements
 
-- Suricata IDS integration
-- Splunk log forwarding
-- Certificate-based authentication
-- AES-GCM implementation
-- Multi-client secure communication
-- Automated security testing
+### Security
+
+- Suricata IDS Integration
+- Certificate-Based Authentication
+- AES-GCM Encryption
+
+### Monitoring
+
+- Splunk Log Forwarding
+- SIEM Integration
+
+### Networking
+
+- Multi-Client Secure Communication
+- Automated Security Testing
 
 ---
 
-# Resume Highlights
+# 💼 Resume Highlights
 
-This project demonstrates practical experience with:
+This project demonstrates practical experience in:
 
-- Enterprise network analysis
-- Secure wireless communication
-- VPN implementation
-- Intrusion detection
-- Packet capture and analysis
-- Python-based security tool development
-- Security documentation
-- Cybersecurity lab design
+- Enterprise Network Security
+- Wireless Communication Security
+- VPN Deployment
+- Intrusion Detection Systems
+- Packet Analysis using Wireshark
+- Python-Based Security Tool Development
+- End-to-End Encryption
+- Security Documentation & Reporting
+
+---
+
+# 📚 References
+
+- [Wireshark Official Documentation](https://www.wireshark.org/docs/)
+- [Snort 3 Official Documentation](https://docs.snort.org/)
+- [WireGuard Official Documentation](https://www.wireguard.com/)
+- [Python Cryptography Documentation](https://cryptography.io/en/latest/)
 
 ---
 
