@@ -23,10 +23,10 @@
 
 ## Snort IDS - Custom ICMP Detection
 
-# objecive #
+## objecive ##
 Configure Snort 3 to detect ICMP traffic using a custom rule.
 
-**Activities Performed**
+## Activities Performed ##
 - Configured Kali VM with Bridged Networking.
 - Verified network connectivity.
 - Modified `snort.lua` to load `local.rules`.
@@ -35,18 +35,19 @@ Configure Snort 3 to detect ICMP traffic using a custom rule.
 - Generated ICMP traffic from the Windows host.
 - Observed successful IDS alerts.
 
-**Evidence**
+## Evidence ##
 - 01_Network_Verification.png
 - 02_Snort_Configuration_Validation.png
 - 03_Custom_ICMP_Rule.png
 - 04_Live_ICMP_Alert.png
 - 05_Windows_Ping_Test.png
 
-**Result**
+## Result ## 
 Successfully detected ICMP echo request and reply traffic using a custom Snort rule.
 
-**Lessons Learned**
+## Lessons Learned ##
 An IDS detects and reports suspicious or defined traffic patterns but does not block them. Alert analysis requires validating the source, destination, protocol, timestamp, and determining whether the activity is expected or suspicious.
+
 ## Day X – Snort IDS Alert Logging
 
 ### Objective
@@ -99,3 +100,40 @@ Snort is successfully generating alerts that are ready to be ingested into Splun
 - Successful VPN handshake
 - Successful ping tests
 - VPN interface configuration
+
+## Day X – End-to-End Encryption Implementation ##
+
+### Date: 23-07-2026 ###
+
+## Objective ##
+
+Implement and validate secure end-to-end encrypted communication between a Windows client and a Kali Linux server using symmetric encryption.
+
+## Activities Performed ##
+Configured a shared development folder between the Windows host and Kali Linux virtual machine.
+Generated a symmetric encryption key using the Fernet implementation from the Python cryptography library.
+Developed a secure TCP server capable of receiving encrypted messages and decrypting them using the shared key.
+Developed an interactive TCP client that encrypts user-supplied messages before transmission.
+Established encrypted communication over TCP port 5000 between the Windows client and the Kali server.
+Verified successful decryption of the transmitted message on the server.
+Captured network traffic using Wireshark to validate that only encrypted ciphertext traversed the network.
+Verified that the plaintext message was never exposed during transmission.
+
+## Technologies Used ## 
+Python 3
+Cryptography (Fernet)
+Socket Programming
+Kali Linux
+Windows 11
+Wireshark
+Result
+
+Successfully implemented secure end-to-end encrypted communication. Wireshark packet captures confirmed that only encrypted ciphertext was transmitted across the network, demonstrating confidentiality during data transmission.
+
+## Evidence Collected ##
+Server initialization
+Client message transmission
+Encrypted payload
+Successful decryption
+Wireshark TCP capture
+Follow TCP Stream analysis
