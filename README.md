@@ -290,23 +290,51 @@ Features implemented:
 
 # 📸 Project Gallery
 
-## Wireshark & TLS Analysis
+## 🖥️ Environment Setup
 
-| Wireshark Capture | TLS Packet Details |
-|-------------------|--------------------|
-| ![](Screenshots/07_Wireless_Data_Transmission/01_wireshark_capture_started.png) | ![](Screenshots/07_Wireless_Data_Transmission/03_tls_packet_details.png) |
+| Project Structure | Kali Linux Environment |
+|-------------------|------------------------|
+| ![](Screenshots/01_Project_Setup/01_project_folder_structure.png) | ![](Screenshots/01_Project_Setup/06_kali_system_information.png) |
+
+| Wireshark Installed | Network Configuration |
+|----------------------|-----------------------|
+| ![](Screenshots/01_Project_Setup/08_wireshark_version.png) | ![](Screenshots/01_Project_Setup/07_network_configuration.png) |
 
 ---
 
-## WireGuard VPN
+## 📡 Wireshark Traffic Analysis
 
-| Client Connected | Packet Capture |
-|------------------|----------------|
+| Live Capture | TLS Traffic |
+|--------------|-------------|
+| ![](Screenshots/02_Wireshark/01_live_capture.png) | ![](Screenshots/02_Wireshark/04_tls_traffic.png) |
+
+---
+
+## 🚨 Snort IDS
+
+| IDS Running | Alert Detection |
+|-------------|-----------------|
+| ![](Screenshots/03_Snort_IDS/05_snort_ids_running.png) | ![](Screenshots/03_Snort_IDS/08_live_icmp_alert.png) |
+
+---
+
+## 📊 Splunk SIEM
+
+| Alerts Received | Events Timeline |
+|-----------------|-----------------|
+| ![](Screenshots/04_Splunk_SIEM/02_alerts_received.png) | ![](Screenshots/04_Splunk_SIEM/03_events_timeline.png) |
+
+---
+
+## 🔒 WireGuard VPN
+
+| Client Connected | UDP Traffic Capture |
+|------------------|---------------------|
 | ![](Screenshots/10_WireGuard_VPN/07_windows_client_active.png) | ![](Screenshots/10_WireGuard_VPN/12_wireguard_udp_capture.png) |
 
 ---
 
-## End-to-End Encryption
+## 🔐 End-to-End Encryption
 
 | Server Waiting | Encrypted Payload |
 |----------------|-------------------|
@@ -316,6 +344,17 @@ Features implemented:
 |-------------------|-------------------|
 | ![](Screenshots/07_Wireless_Data_Transmission/12_decrypted_message.png) | ![](Screenshots/07_Wireless_Data_Transmission/15_follow_tcp_stream.png) |
 
+---
+
+## ✅ Testing & Validation
+
+| Windows Connectivity | Kali Connectivity |
+|----------------------|-------------------|
+| ![](Screenshots/08_Testing/01_windows_ping_test.png) | ![](Screenshots/10_WireGuard_VPN/10_kali_ping_client.png) |
+
+---
+
+> **Note:** This repository contains over **75 implementation screenshots** documenting the complete setup, configuration, testing, and validation process. Only a representative selection is shown above. Additional evidence is available in the `Screenshots/` directory.
 ---
 
 # 🎯 Skills Demonstrated
